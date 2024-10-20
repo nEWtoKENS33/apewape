@@ -1,0 +1,348 @@
+body {
+    font-family: "Comic Sans MS", "Arial Black", sans-serif;
+    background-color: #000000; /* Rosa choqueante */
+    color: #ffffff; /* Verde lima */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/jungleBG.png"); /* URL del GIF de fondo */
+    background-repeat: repeat; /* Repetir en patrones */
+    cursor: url("../images/cursor.gif"), auto; /* URL del GIF del cursor personalizado */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra de texto azul */
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 60px; /* Añadir margen inferior para evitar que el footer se empalme con el contenido */
+}
+
+.logo {
+    max-width: 100%; /* Asegura que la imagen sea responsive y no sobrepase el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen no tenga espacio extra alrededor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    @media (max-width: 768px) {
+        .logo {
+            max-width: 80%; /* Reduce el tamaño del logo en pantallas medianas */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logo {
+            max-width: 60%; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
+        }
+    }
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff8f8;
+    font-weight: bold;
+    background-color: #330aff;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+}
+
+
+
+h1.LUNA {
+    align-items: center;
+    font-size: 22px;
+    color: #ff00ff;
+    text-shadow: 2px 2px 2px #000;
+    background-color: #e3f802;
+    padding: 2px;
+    border: 5px solid #ff0000;
+}
+
+main {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    align-items: center;
+    color: #ff00e6;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #1aff00;
+    width: 100%;
+}
+
+.moving-gif {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/TICKER.gif');
+    background-size: cover;
+    animation: moveGif 5s linear infinite;
+}
+
+.separator1 {
+    height: 100px;
+    background-image: url("../images/monkey-bar.gif");
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: moveGif 5s linear infinite;
+}
+
+.p1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ff00ff; /* Cambiar el color del texto a magenta (#ff00ff) */
+}
+
+@keyframes moveGif {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 800px 0;
+    }
+}
+
+.gallery {
+    text-align: center;
+    margin-bottom: 40px;
+    border: 2px solid #008080;
+    padding: 10px;
+    background-color: #c0c0c0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #ff0fb3;
+    background-color: #35ef21;
+    padding: 2px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-column {
+    flex: 1;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery-column img:nth-child(1) {
+    width: 150px;
+}
+
+.gallery-column img:nth-child(2) {
+    width: 200px;
+}
+
+.gallery-column img:nth-child(3) {
+    width: 250px;
+}
+
+.gallery-column img:nth-child(4) {
+    width: 180px;
+}
+
+.gallery-column img:nth-child(5) {
+    width: 220px;
+}
+
+.gallery-column img:nth-child(6) {
+    width: 180px;
+}
+
+.gallery-column img:nth-child(7) {
+    width: 200px;
+}
+
+.gallery-column img:nth-child(8) {
+    width: 160px;
+}
+
+.gallery-column img:nth-child(9) {
+    width: 240px;
+}
+
+.gallery-column img:nth-child(10) {
+    width: 220px;
+}
+
+.gallery-column img:nth-child(11) {
+    width: 190px;
+}
+
+.gallery-column img:nth-child(12) {
+    width: 250px;
+}
+
+
+.gallery-column {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #008080;
+    background-color: #e0e0e0;
+    padding: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Capa superior para que esté por encima del contenido */
+}
+
+.overlay-content {
+    background-color: #c0c0c0; /* Fondo gris estilo Windows 95 */
+    padding: 20px;
+    border: 4px solid #000; /* Borde negro */
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button, .btn-no {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    background-color: #008080; /* Fondo cyan estilo Windows 95 */
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-no {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover, .btn-no:hover {
+    background-color: #00bfff; /* Fondo azul claro al pasar el mouse */
+}
+
+/* Estilo para el contenedor de video */
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    border: 50px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff);
+    padding: 10px;
+    animation: changeBorderColors 5s infinite alternate;
+}
+
+/* Estilo para el video */
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Animación para cambiar los colores del borde */
+@keyframes changeBorderColors {
+    0% {
+        border-image-source: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #00ff00, #ffff00, #ff0000);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #0000ff, #ff00ff, #00ff00);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.email-text {
+            text-align: center; /* Centra el texto horizontalmente */
+            font-size: 12px; /* Tamaño de letra pequeño */
+            padding: 10px 0; /* Espaciado antes y después del texto */
+            /* Otras propiedades de estilo que desees añadir */
+        }
